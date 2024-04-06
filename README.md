@@ -1,1 +1,1 @@
-# fix-bad-video-players
+# Fix Bad Video Players
