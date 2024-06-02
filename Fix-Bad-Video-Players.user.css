@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Fix Bad Video Players
 @namespace   JacobRothDevelopment
-@version     1.0.0
+@version     1.1.0
 @homepageURL https://github.com/JacobRothDevelopment/fix-bad-video-players
 @supportURL  https://github.com/JacobRothDevelopment/fix-bad-video-players/issues
 @updateURL   https://github.com/JacobRothDevelopment/fix-bad-video-players/raw/main/Fix-Bad-Video-Players.user.css
@@ -86,5 +86,28 @@
 
   div.WatchVideoPlayer__Wrapper * {
     height: 100vh;
+  }
+}
+
+@-moz-document domain("the.streameast.app") {
+  /* full width video */
+  div.theater-mode > div {
+    width: 100vw !important;
+  }
+
+  /* hide theatre mode button */
+  #theater-mode-btn.theater-mode-btn-close {
+    transition: opacity 0.3s ease;
+    opacity: 0.1;
+  }
+
+  /* reveal theater mode button on hover */
+  #theater-mode-btn.theater-mode-btn-close:hover {
+    opacity: 0.8;
+  }
+
+  /* hide twitch chat */
+  #live-chat-iframe {
+    display: none;
   }
 }
