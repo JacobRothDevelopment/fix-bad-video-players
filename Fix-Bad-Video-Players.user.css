@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Fix Bad Video Players
 @namespace   JacobRothDevelopment
-@version     1.1.0
+@version     1.1.1
 @homepageURL https://github.com/JacobRothDevelopment/fix-bad-video-players
 @supportURL  https://github.com/JacobRothDevelopment/fix-bad-video-players/issues
 @updateURL   https://github.com/JacobRothDevelopment/fix-bad-video-players/raw/main/Fix-Bad-Video-Players.user.css
@@ -47,17 +47,13 @@
 @-moz-document domain("espn.com") {
   /* ESPN */
   /* overlay the "Back" Button */
-  main
-    > .WatchListingsVideo.WatchListingsVideo--VideoContainer
-    > a.AnchorLink.AnchorLink--dark.WatchListingsVideo__BackBtn {
+  main a.AnchorLink.AnchorLink--dark.WatchListingsVideo__BackBtn {
     position: fixed;
     z-index: 999;
     opacity: 0.2;
   }
 
-  main
-    > .WatchListingsVideo.WatchListingsVideo--VideoContainer
-    > a.AnchorLink.AnchorLink--dark.WatchListingsVideo__BackBtn:hover {
+  main a.AnchorLink.AnchorLink--dark.WatchListingsVideo__BackBtn:hover {
     opacity: 1;
   }
 
@@ -72,7 +68,7 @@
   }
 
   /* full wide video player */
-  main > div.WatchListingsVideo.WatchListingsVideo--VideoContainer {
+  main div.WatchListingsVideo.WatchListingsVideo--VideoContainer {
     width: 100%;
     max-width: 100%;
     margin: 0;
