@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Fix Bad Video Players
 @namespace   JacobRothDevelopment
-@version     1.1.1
+@version     1.1.2
 @homepageURL https://github.com/JacobRothDevelopment/fix-bad-video-players
 @supportURL  https://github.com/JacobRothDevelopment/fix-bad-video-players/issues
 @updateURL   https://github.com/JacobRothDevelopment/fix-bad-video-players/raw/main/Fix-Bad-Video-Players.user.css
@@ -9,101 +9,111 @@
 @author      JacobRothDevelopment
 ==/UserStyle== */
 @-moz-document domain("watch.sportsurge.club") {
-  /* SportSurge.club */
-  .container > .row > .col-md-9 {
-    max-width: none;
-    width: 85%;
-    /*     height: calc(100vh - 47px); */
-    padding: 0;
-    margin: auto;
-    flex-basis: unset;
-  }
+    /* SportSurge.club */
+    .container > .row > .col-md-9 {
+        max-width: none;
+        width: 85%;
+        /*     height: calc(100vh - 47px); */
+        padding: 0;
+        margin: auto;
+        flex-basis: unset;
+    }
 
-  .container > .row > .col-md-9 > .box-responsive {
-    width: 100%;
-  }
+    .container > .row > .col-md-9 > .box-responsive {
+        width: 100%;
+    }
 
-  div.container {
-    max-width: 100vw;
-  }
+    div.container {
+        max-width: 100vw;
+    }
 
-  .container > .row > .col-md-3 {
-    display: none;
-  }
+    .container > .row > .col-md-3 {
+        display: none;
+    }
 
-  br {
-    display: none;
-  }
+    br {
+        display: none;
+    }
 }
 
 @-moz-document domain("crunchyroll.com") {
-  /* CrunchyRoll */
-  /* full viewport minus navbar */
-  div.video-player-wrapper {
-    height: calc(100vh - 60px);
-  }
+    /* CrunchyRoll */
+    /* full viewport minus navbar */
+    div.video-player-wrapper {
+        height: calc(100vh - 60px);
+    }
 }
 
 @-moz-document domain("espn.com") {
-  /* ESPN */
-  /* overlay the "Back" Button */
-  main a.AnchorLink.AnchorLink--dark.WatchListingsVideo__BackBtn {
-    position: fixed;
-    z-index: 999;
-    opacity: 0.2;
-  }
+    /* ESPN */
+    /* overlay the "Back" Button */
+    main a.AnchorLink.AnchorLink--dark.WatchListingsVideo__BackBtn {
+        position: fixed;
+        z-index: 999;
+        opacity: 0.2;
+    }
 
-  main a.AnchorLink.AnchorLink--dark.WatchListingsVideo__BackBtn:hover {
-    opacity: 1;
-  }
+    main a.AnchorLink.AnchorLink--dark.WatchListingsVideo__BackBtn,
+    main a.AnchorLink.AnchorLink--dark.WatchListingsVideo__BackBtn svg {
+        color: white;
+        fill: white;
+        transition: opacity ease 0.2s;
+    }
 
-  /* dim the ESPN Logo */
-  button#partner-logo-btn {
-    opacity: 0.2;
-    max-width: 10%;
-  }
+    main a.AnchorLink.AnchorLink--dark.WatchListingsVideo__BackBtn:hover,
+    main a.AnchorLink.AnchorLink--dark.WatchListingsVideo__BackBtn:hover svg {
+        opacity: 1;
+    }
 
-  button#partner-logo-btn:hover {
-    opacity: 0.4;
-  }
+    /* dim the ESPN Logo */
+    button#partner-logo-btn {
+        opacity: 0.2;
+        max-width: 10%;
+        transition: opacity ease 0.2s;
+    }
 
-  /* full wide video player */
-  main div.WatchListingsVideo.WatchListingsVideo--VideoContainer {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-  }
+    button#partner-logo-btn:hover {
+        opacity: 0.4;
+    }
 
-  /* full height video wrapper */
-  div.WatchVideoPlayer__Wrapper {
-    padding-bottom: 0px !important;
-    height: 100vh;
-  }
+    /* full wide video player */
+    main div.WatchListingsVideo.WatchListingsVideo--VideoContainer {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
 
-  div.WatchVideoPlayer__Wrapper * {
-    height: 100vh;
-  }
+    /* full height video wrapper */
+    div.WatchVideoPlayer__Wrapper {
+        padding-bottom: 0px !important;
+        height: 100vh;
+    }
+
+    div.WatchVideoPlayer__Wrapper * {
+        height: 100vh;
+    }
 }
 
 @-moz-document domain("the.streameast.app") {
-  /* full width video */
-  div.theater-mode > div {
-    width: 100vw !important;
-  }
+    /* StreamEast.app */
+    /* full width video */
+    div.theater-mode > div {
+        width: 100vw !important;
+    }
 
-  /* hide theatre mode button */
-  #theater-mode-btn.theater-mode-btn-close {
-    transition: opacity 0.3s ease;
-    opacity: 0.1;
-  }
+    /* hide theatre mode button */
+    #theater-mode-btn.theater-mode-btn-close {
+        transition: opacity 0.3s ease;
+        opacity: 0.1;
+    }
 
-  /* reveal theater mode button on hover */
-  #theater-mode-btn.theater-mode-btn-close:hover {
-    opacity: 0.8;
-  }
+    /* reveal theater mode button on hover */
+    #theater-mode-btn.theater-mode-btn-close:hover {
+        opacity: 0.8;
+    }
 
-  /* hide twitch chat */
-  #live-chat-iframe {
-    display: none;
-  }
+    /* hide twitch chat */
+    #live-chat-iframe {
+        display: none;
+    }
 }
