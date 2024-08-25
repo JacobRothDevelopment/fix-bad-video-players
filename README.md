@@ -6,4 +6,8 @@ I try to fix them.
 
 # How To Install
 
-https://userstyles.world/style/15663/fix-bad-video-players
+1. Install `Stylus` Extension
+   - [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+   - [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/)
+   - [Source Code](https://github.com/openstyles/stylus)
+2. Install [Style](https://userstyles.world/style/15663/fix-bad-video-players)
