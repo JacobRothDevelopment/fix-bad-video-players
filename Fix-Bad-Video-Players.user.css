@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Fix Bad Video Players
 @namespace   JacobRothDevelopment
-@version     1.1.2
+@version     1.1.3
 @homepageURL https://github.com/JacobRothDevelopment/fix-bad-video-players
 @supportURL  https://github.com/JacobRothDevelopment/fix-bad-video-players/issues
 @updateURL   https://github.com/JacobRothDevelopment/fix-bad-video-players/raw/main/Fix-Bad-Video-Players.user.css
@@ -94,7 +94,7 @@
     }
 }
 
-@-moz-document domain("the.streameast.app") {
+@-moz-document regexp("^https\:\/\/.*\.streameast\..*$") {
     /* StreamEast.app */
     /* full width video */
     div.theater-mode > div {
@@ -105,6 +105,8 @@
     #theater-mode-btn.theater-mode-btn-close {
         transition: opacity 0.3s ease;
         opacity: 0.1;
+        right: 10px !important;
+        bottom: 10px !important;
     }
 
     /* reveal theater mode button on hover */
