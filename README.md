@@ -16,6 +16,10 @@ I try to fix them.
    - [Source Code](https://github.com/openstyles/stylus)
 2. Install [This Style](https://userstyles.world/style/15663/fix-bad-video-players)
 
+## Issues And Feature Requests
+
+Please submit any issues or feature requests to the [Issues Tab](https://github.com/JacobRothDevelopment/fix-bad-video-players/issues)
+
 ## Project Goals And Guidelines
 
 - Margins around video players are stupid
