@@ -1,3 +1,14 @@
 {
-  "cSpell.words": ["crunchyroll", "sportsurge", "streameast", "userstyles"]
+  "cSpell.words": [
+    "crunchyroll",
+    "sportsurge",
+    "streameast",
+    "userstyles",
+    "combatsportsnow"
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#3C2A06",
+    "titleBar.activeBackground": "#553B09",
+    "titleBar.activeForeground": "#FEFAF4"
+  }
 }

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Fix Bad Video Players
 @namespace   JacobRothDevelopment
-@version     1.1.3
+@version     1.1.4
 @homepageURL https://github.com/JacobRothDevelopment/fix-bad-video-players
 @supportURL  https://github.com/JacobRothDevelopment/fix-bad-video-players/issues
 @updateURL   https://github.com/JacobRothDevelopment/fix-bad-video-players/raw/main/Fix-Bad-Video-Players.user.css
@@ -95,7 +95,7 @@
 }
 
 @-moz-document regexp("^https\:\/\/.*\.streameast\..*$") {
-    /* StreamEast.app */
+    /* StreamEast */
     /* full width video */
     div.theater-mode > div {
         width: 100vw !important;
@@ -117,5 +117,37 @@
     /* hide twitch chat */
     #live-chat-iframe {
         display: none;
+    }
+}
+
+@-moz-document domain("combatsportsnow.com") {
+    /* Combat Sports Now */
+    :root {
+        --heading-height: 60px;
+        --display-height: calc(100vh - var(--heading-height));
+        --display-width: calc(var(--display-height) * 16 / 9);
+    }
+
+    /* extra text and copyright stuff i don't want */
+    #csn-wm,
+    body > main > div.bg-red-900.text-white,
+    body > main > div#app > div > div.text-center {
+        display: none !important;
+    }
+
+    /* fix video player size */
+    .max-w-7xl.mx-auto.p-4 {
+        max-width: var(--display-width);
+        padding: 0;
+    }
+
+    /* make background black */
+    #app {
+        background-color: black;
+    }
+
+    /* make text readable on black background */
+    .max-w-2xl.mx-auto.text-center.my-5 {
+        background-color: white;
     }
 }

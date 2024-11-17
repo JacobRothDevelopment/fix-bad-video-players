@@ -16,7 +16,7 @@ I try to fix them.
    - [Source Code](https://github.com/openstyles/stylus)
 2. Install [This Style](https://userstyles.world/style/15663/fix-bad-video-players)
 
-## PROJECT GOALS AND RULES
+## Project Goals And Guidelines
 
 - Margins around video players are stupid
   - Video player should fill browser height and width as much as possible
